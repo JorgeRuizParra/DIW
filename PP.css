@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "miTitulo";
+    src: url("Bungee-Regular.ttf");
+}
+
+body{
+    margin: 0 auto;
+    background-color: #90A955;
+}
+
+#logo{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+#header{
+    width: 100%;
+    height: 210px;
+    background-color:#31572C;
+}
+
+#titulo{
+    font-family: 'miTitulo', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: 30px;
+    margin-left: 33%;
+}
+
+#INC-REG{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn-ir{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ECF39E;
+}
+
+#corredor{
+    position: absolute;
+    top: 146px;
+    left: -20px;
+    width: 80px;
+    transform: scaleX(-1);
+    height: 80px;
+    animation-name: perro-corre;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes perro-corre{
+    0%   {transform: translate(-20px, 0px),scaleX(-1);}
+    50%  {transform: translate(1900px, 0px);}
+    100% {transform: translate(-20px, 0px),scaleX(-1);} 
+}
