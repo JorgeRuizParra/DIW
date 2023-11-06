@@ -65,6 +65,11 @@ body{
     100% {transform: translate(0px, 0px) scaleX(-1);} 
 }
 
+#menu-caja{
+    height: 250px;
+    width: 0px;
+}
+
 #menu{
     background-color: #31572C;
     height: 250px;
