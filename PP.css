@@ -13,6 +13,7 @@ body{
     width: 150px;
     height: 150px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 #header{
@@ -50,12 +51,62 @@ body{
     transform: scaleX(-1);
     height: 80px;
     animation-name: perro-corre;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
+    
 }
 
 @keyframes perro-corre{
-    0%   {transform: translate(-20px, 0px),scaleX(-1);}
-    50%  {transform: translate(1900px, 0px);}
-    100% {transform: translate(-20px, 0px),scaleX(-1);} 
+    0%   {transform: translate(-20px, 0px) scaleX(-1);}
+    0%   {transform: translate(0px, 0px) scaleX(-1);}
+    50%  {transform: translate(2050px, 0px) scaleX(-1);}
+    60%  {transform: translate(2050px, 0px) ;}
+    90%  {transform: translate(0px, 0px) ;}
+    100% {transform: translate(0px, 0px) scaleX(-1);} 
+}
+
+#menu{
+    background-color: #31572C;
+    height: 250px;
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: -420px;
+    margin-top: -70px;
+    padding: 20px;
+    padding-right: 0;
+}
+
+#btn-des{
+    background-color: #31572C;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 0;
+}
+
+#menu-caja:hover{
+    animation-name: deslizamiento;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes deslizamiento {
+    from{transform: translate(0px,0px);}
+    to{transform: translate(420px,0px);}
+}
+
+#lista-des{
+    list-style: none;
+}
+
+#lista-des li{
+    padding-bottom: 40px;
+}
+
+#lista-des a{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
