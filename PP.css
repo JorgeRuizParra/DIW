@@ -3,6 +3,11 @@
     src: url("Bungee-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Rubik";
+    src: url("Rubik-Light.ttf");
+}
+
 body{
     margin: 0 auto;
     background-color: #90A955;
@@ -16,10 +21,14 @@ body{
     margin-left: 10px;
 }
 
+#logo:hover{
+    opacity: 0.5;
+}
+
 #header{
     width: 100%;
     height: 210px;
-    background-color:#31572C;
+    background: linear-gradient(#31572C,#90A955);
 }
 
 #titulo{
@@ -28,6 +37,15 @@ body{
     position: absolute;
     top: 30px;
     margin-left: 33%;
+    color: #e9eeb0;
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titulo{
+    0%   {transform: translate(3000px, 0px);}
+    100% {transform: translate(0px, 0px);} 
 }
 
 #INC-REG{
@@ -59,8 +77,8 @@ body{
 @keyframes perro-corre{
     0%   {transform: translate(-20px, 0px) scaleX(-1);}
     0%   {transform: translate(0px, 0px) scaleX(-1);}
-    50%  {transform: translate(2050px, 0px) scaleX(-1);}
-    60%  {transform: translate(2050px, 0px) ;}
+    50%  {transform: translate(1850px, 0px) scaleX(-1);}
+    60%  {transform: translate(1850px, 0px) ;}
     90%  {transform: translate(0px, 0px) ;}
     100% {transform: translate(0px, 0px) scaleX(-1);} 
 }
@@ -68,18 +86,25 @@ body{
 #menu-caja{
     height: 250px;
     width: 0px;
+    position: absolute;
 }
 
 #menu{
     background-color: #31572C;
-    height: 250px;
-    width: 400px;
+    height: 280px;
+    width: 420px;
     position: relative;
     top: 20px;
     left: -420px;
     margin-top: -70px;
     padding: 20px;
     padding-right: 0;
+    z-index: 10;
+}
+
+#pata{
+    width: 32px;
+    height: 32px;
 }
 
 #btn-des{
@@ -88,12 +113,23 @@ body{
     height: 50px;
     position: relative;
     border: 0;
+    z-index: 10;
+    animation-name: cambia-color-menu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambia-color-menu {
+    0%   {background-color: #31572C;}
+    50%   {background-color: #376131;}
+    100%   {background-color: #31572C;}
 }
 
 #menu-caja:hover{
     animation-name: deslizamiento;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    z-index: 20;
 }
 
 @keyframes deslizamiento {
@@ -114,4 +150,145 @@ body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+}
+
+#lista-des li:hover{
+    color: white;
+    text-decoration:underline;
+    transform: scale(1.1);
+}
+
+#caja-flo-izq{
+    text-align: center;
+    position: fixed;
+    width: 250px;
+    height: 370px;
+    border: 2px solid #31572C;
+    background-color: #4F772D;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+#caja-flo-der{
+    text-align: center;
+    position: fixed;
+    left: 1640px;
+    width: 250px;
+    height: 370px;
+    border: 2px solid #31572C;
+    background-color: #4F772D;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+#caja-fix{
+    position: absolute;
+    top: 350px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.texto-caja-fix{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.imagen-caja{
+    border: 5px solid #31572C;
+    width: 192px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn-caja{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ECF39E;
+    border: 3px solid #31572C;
+    font: "Rubik";
 }
