@@ -48,6 +48,10 @@ body{
 }
 
 #titulo-caja{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 40%;
     animation-name: titulo-move;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -56,9 +60,7 @@ body{
 #titulo{
     font-family: 'miTitulo', sans-serif;
     font-size: 60px;
-    position: absolute;
-    top: 30px;
-    margin-left: 32%;
+    
     color: #e9eeb0;
     animation-name: titulo-tam;
     animation-duration: 2s;
@@ -200,13 +202,12 @@ body{
 #caja-flo-der{
     text-align: center;
     position: fixed;
-    left: 1640px;
+    right: 1%;
     width: 250px;
     height: 370px;
     border: 2px solid #31572C;
     background-color: #4F772D;
     border-radius: 10px;
-    margin-right: 30px;
     padding-top: 10px;
 }
 
