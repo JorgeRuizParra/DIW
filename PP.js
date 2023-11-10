@@ -31,3 +31,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function mostrarTexto() {
+  let texto = document.getElementById("informacion-txt");
+
+  if (texto.style.display == "none"){
+    texto.style.display = "block";
+  }else{
+    texto.style.display = "none";
+  }
+}

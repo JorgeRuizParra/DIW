@@ -9,12 +9,27 @@
 </head>
 <body onload="inicio()">
     <div id="header">
-        <a href="index.html"><img id="logo" src="imagenes/PPPP.png"></a><div id="titulo-caja"><span id="titulo">PetPalace</span></div>
+        <a href="index.html"><img id="logo" src="imagenes/PPPP.png"></a>
+        <div id="titulo-caja"><span id="titulo">PetPalace<span id="titulo-sub">Santuario de animales</span></span></div>
         <div id="INC-REG">
             <a><button class="btn-ir">Adoptar</button></a>
-            <a><button class="btn-ir">Iniciar Sesion</button></a>
+            <a href="inicio_de_sesion.html"><button class="btn-ir">Registro</button></a>
         </div>
         <div><a href="https://nuevavida-adopciones.org/" target="_blank"><img  id="corredor" src="imagenes/perro-corriendo.png"></a></div>
+    </div>
+    <div id="informacion">
+        <button type="submit" onclick="mostrarTexto()"><i class="fa-solid fa-circle-info fa-2xl fa-beat" style="color: #31572C;"></i></button>
+        <p id="informacion-txt">
+            PetPalace es mucho más que un refugio animal; 
+            somos un santuario comprometido con el bienestar de nuestros amigos peludos.
+            Brindamos cuidado integral, atención veterinaria de calidad y promovemos adopciones responsables
+            para garantizar que cada animal encuentre un hogar lleno de amor. Nuestra misión se extiende
+            más allá de las instalaciones, ya que nos esforzamos por educar a la comunidad sobre la importancia
+            de la adopción, la esterilización y la atención responsable de las mascotas. En PetPalace
+            , todos son bienvenidos a unirse como voluntarios y contribuir a nuestra causa, porque creemos que
+            , juntos, podemos crear un mundo donde cada animal tenga la oportunidad de vivir una vida plena y feliz.
+             Adopta, dona o únete a nosotros; 
+            cada pequeño gesto hace una gran diferencia.</p>
     </div>
     <div id="menu-caja">
         <button id="btn-des"><img id="pata" src="imagenes/pata.png"></button>
@@ -88,21 +103,22 @@
                 <th><span class="texto-tabla">Noticias</span></th><th><span class="texto-tabla">Adopciones</span></th>
             </tr>
             <tr>
-                <td><div class="caja-not"><img class="img-not" src="imagenes/tobias_lesion.jpg"><div class="caja-img-not"><h6 class="texto-not">Enzo</h6></div></div></td><td><div class="caja-not"><img class="img-not" src="imagenes/Lola_hijos_adopcion.jpg"><div class="caja-img-not"><h6 class="texto-not">Los Hijos de</h6></div></div</td>
+                <td><div class="caja-not"><img class="img-not" src="imagenes/tobias_lesion.jpg"><div class="caja-img-not"><h6 class="texto-not">Enzo se cae encima de Raul lo que le genera una lesión en su pata delantera</h6></div></div></td><td><div class="caja-not"><img class="img-not" src="imagenes/Lola_hijos_adopcion.jpg"><div class="caja-img-not"><h6 class="texto-not">Los Hijos de Camila</h6></div></div</td>
             </tr>
             <tr>
-                <td><div class="caja-not"><img class="img-not" src="imagenes/pelea_perros.jpg"><div class="caja-img-not"><h6 class="texto-not">Enzo</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/Raul.jpg"><div class="caja-img-not"><h6 class="texto-not">Fabián</h6></div></div</td>
+                <td><div class="caja-not"><img class="img-not" src="imagenes/pelea_perros.jpg"><div class="caja-img-not"><h6 class="texto-not">Pelea canina que conlleva a grandes represalias en los involucrados</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/Raul.jpg"><div class="caja-img-not"><h6 class="texto-not">Raul</h6></div></div</td>
             </tr>
             <tr>
-                <td><div class="caja-not"><img class="img-not" src="imagenes/Klara_y_hijos.jpg"><div class="caja-img-not"><h6 class="texto-not">Enzo</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/nestor-adoptado.jpg"><div class="caja-img-not"><h6 class="texto-not">Ernesto</h6></div></div</td>
+                <td><div class="caja-not"><img class="img-not" src="imagenes/Klara_y_hijos.jpg"><div class="caja-img-not"><h6 class="texto-not">Nacen los 9 hijos de Klara</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/nestor-adoptado.jpg"><div class="caja-img-not"><h6 class="texto-not">Ernesto</h6></div></div</td>
             </tr>
             <tr>
-                <td><div class="caja-not"><img class="img-not" src="imagenes/donacion.jpg"><div class="caja-img-not"><h6 class="texto-not">Enzo</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/bimba_y_lola.jpg"><div class="caja-img-not"><h6 class="texto-not">Bimba Y Lola</h6></div></div</td>
+                <td><div class="caja-not"><img class="img-not" src="imagenes/donacion.jpg"><div class="caja-img-not"><h6 class="texto-not">Recibimos una donación anónima que supera los 300 euros para comida y juguetes</h6></div></div</td><td><div class="caja-not"><img class="img-not" src="imagenes/bimba_y_lola.jpg"><div class="caja-img-not"><h6 class="texto-not">Bimba Y Lola</h6></div></div</td>
             </tr>
         </table>
     </div>
     <div class="pie">
         
     </div>
+    <script src="https://kit.fontawesome.com/9867309b51.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='FormPP.css'>
+</head>
+<body>
+    <div id="caja-opacidad"></div>
+    <div id="caja-form">
+      <a href="index.html"><i id="volver" class="fa-solid fa-left-long fa-lg" style="color: #000000;"></i></a>
+      <img id="logo" src="imagenes/PPPP.png">
+      <h1>Formulario de Registro</h1>
+        <form>
+            <div class="campos">
+                <label for="nombre">Nombre y Apellidos:</label><br />
+                <input type="text" placeholder="" name="nombre" id="nombre"><br />
+                <i id="ico-nom" class="fa-solid fa-user fa-lg" style="color: #000000;"></i>
+              </div>
+              <div class="campos">
+                <label for="pass">Contraseña:</label><br />
+                <input type="password" placeholder="" name="pass" id="pass"><br />
+                <i id="ico-ctr" class="fa-solid fa-lock fa-lg" style="color: #000000;"></i>
+              </div>
+              <div class="campos">
+                <label for="email">Email:</label><br />
+                <input type="email" placeholder="" name="email" id="email"><br />
+                <i id="ico-ema" class="fa-solid fa-envelope fa-lg" style="color: #000000;"></i>
+              </div>
+              <div class="campos">
+                <label for="tlf">Telefono:</label><br />
+                <input type="number" placeholder="" name="tlf" id="tlf"><br />
+                <i id="ico-tlf" class="fa-solid fa-phone fa-shake fa-lg" style="color: #000000;"></i>
+              </div>
+              <div id="caja-btn">
+                <button id="btn-enviar" type="submit">Enviar</button>
+                <button id="btn-enviar" type="reset">Borrar</button>
+              </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/9867309b51.js" crossorigin="anonymous"></script>
+</body>
+</html>
