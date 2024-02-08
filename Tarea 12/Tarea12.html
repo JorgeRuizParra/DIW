@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Ejercicio 12</title>
+    <style>
+        div{
+            width: 200px;
+            height: 150px;
+            padding-top: 30px;
+            text-align: center;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        #contenedor1{
+            background-color: lightcoral;
+            float: left;
+        }
+        #contenedor2{
+            background-color: lightblue;
+            float: left;
+        }
+        #contenedor3{
+            background-color: greenyellow;
+            float: left;
+        }
+        #contenedor1:hover{
+            animation-name: contenedor1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #contenedor2:hover{
+            animation-name: contenedor2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        #contenedor3:hover{
+            animation-name: contenedor3;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes contenedor1{
+            from{background-color: lightcoral;}
+            to{background-color: aliceblue; font-size: 20px;}
+        }
+        @keyframes contenedor2 {
+            0%   {background-color:lightblue; border: 1px solid black;}
+            50%   {background-color:gray; border: 5px solid lime;}
+            100%  {background-color:lightblue; border: 1px solid black;} 
+        }
+        @keyframes contenedor3 {
+            from{opacity: 100%;}
+            to{opacity: 30%; transform: translate(-200px, 200px); rotate: -360deg;}
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor1">
+        Tú me quieres alba,
+        me quieres de espumas,
+        me quieres de nácar.
+        Que sea azucena
+        Sobre todas, casta.
+        De perfume tenue.
+        Corola cerrada .
+    </div>
+    <div id="contenedor2">
+        Ni un rayo de luna
+        filtrado me haya.
+        Ni una margarita
+        se diga mi hermana.
+        Tú me quieres nívea,
+        tú me quieres blanca,
+        tú me quieres alba.
+    </div>
+    <div id="contenedor3">
+        Tú que hubiste todas
+        las copas a mano,
+        de frutos y mieles
+        los labios morados.
+        Tú que en el banquete
+        cubierto de pámpanos
+        dejaste las carnes
+        festejando a Baco.
+    </div>
+</body>
+</html>

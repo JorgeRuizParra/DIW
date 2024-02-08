@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        #barraSup{
+            background-color: purple;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        #amarillo{
+            background-color: yellow;
+            float: left;
+        }
+
+        #fuchsia{
+            background-color: fuchsia;
+            float: left;
+        }
+
+        @media screen and (min-width:701px) and (max-width:1920px){
+
+            #barraSup{
+                height: 130px;
+                font-size: 30px;
+            }
+
+            #cajitasMayor{
+                width: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 2%;
+            }
+
+            .cajitas{
+                background-color: orange;
+                color: black;
+                padding: 5px;
+                width: 22%;
+                margin: 10px;
+                float: left;
+                font-size: 18px;
+            }
+
+            #amarillo{
+                width: 60%;
+                height: 500px;
+            }
+
+            #fuchsia{
+                width: 40%;
+                height: 500px;
+            }
+        }
+
+        @media screen and (min-width:400px) and (max-width:700px){
+
+            #barraSup{
+                height: 150px;
+                font-size: 25px;
+            }
+
+            #cajitasMayor{
+                margin-top: 2%;
+                margin-left: 7%;
+            }
+
+            .cajitas{
+                background-color: orange;
+                color: black;
+                padding: 5px;
+                width: 40%;
+                margin: 10px;
+                float: left;
+                font-size: 18px;
+            }
+
+            #amarillo{
+                width: 60%;
+                height: 300px;
+            }
+
+            #fuchsia{
+                width: 40%;
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width:399px){
+
+            #barraSup{
+                height: 240px;
+                font-size: 25px;
+            }
+
+            #cajitasMayor{
+                margin-top: 7%;
+                display: block;
+                margin-left: 15%;
+                
+            }
+
+            .cajitas{
+                background-color: orange;
+                color: black;
+                padding: 5px;
+                width: 70%;
+                margin: 10px;
+                font-size: 18px;
+            }
+
+            #amarillo{
+                width: 100%;
+                height: 150px;
+            }
+
+            #fuchsia{
+                width: 100%;
+                height: 75px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="barraSup">Barra Superior
+        <div id="cajitasMayor">
+            <div class="cajitas">Caja 1</div>
+            <div class="cajitas">Caja 2</div>
+            <div class="cajitas">Caja 3</div>
+            <div class="cajitas">Caja 4</div>
+        </div>
+    </div>
+    <div id="amarillo"></div>
+    <div id="fuchsia"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Ejercicio 12</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            padding-top: 30px;
+            text-align: center;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        #contenedor1{
+            background-color: greenyellow;
+            float: left;
+            animation-name: contenedor1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        #contenedor2{
+            background-color: lightblue;
+            float: left;
+            margin-left: 400px;
+            animation-name: contenedor2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes contenedor1{
+            0%   {transform: translate(0px, 0px); background-color: red;}
+            25%   {transform: translate(200px, 0px); background-color: orange;}
+            50%   {transform: translate(200px, 200px); background-color: yellow;}
+            75%   {transform: translate(0px, 200px); background-color: greenyellow;}
+            100%  {transform: translate(0px, 0px); background-color: lightcoral;} 
+        }
+
+        @keyframes contenedor2{
+            0%   {transform: translate(0px, 0px); background-color: purple;}
+            20%   {transform: translate(-200px, 0px); background-color: blueviolet;}
+            40%   {transform: translate(-200px, 200px); background-color: blue;}
+            60%   {transform: translate(-100px, 200px); background-color: lightblue;}
+            80%   {transform: translate(0px, 200px); background-color: blue;} 
+            100%  {transform: translate(0px, 0px); background-color: blueviolet;} 
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor1">
+        Tú me quieres alba,
+        me quieres de espumas,
+        me quieres de nácar.
+        Que sea azucena
+        Sobre todas, casta.
+        De perfume tenue.
+        Corola cerrada .
+    </div>
+    <div id="contenedor2">
+        Ni un rayo de luna
+        filtrado me haya.
+        Ni una margarita
+        se diga mi hermana.
+        Tú me quieres nívea,
+        tú me quieres blanca,
+        tú me quieres alba.
+    </div>
+</body>
+</html>

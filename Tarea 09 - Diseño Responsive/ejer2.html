@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+
+        #barraSup{
+            color: white;
+        }
+
+        @media screen and (min-width:381px) and (max-width:1920px) {
+            
+
+            #barraSup{
+                width: 100%;
+                background-color: purple;
+                height: 75px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            #cajaFoto{
+                background-color: yellow;
+                width: 50%;
+                height: 500px;
+                float: left;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            #Foto{
+                width: 100%;
+                height: 450px;
+            }
+
+            #barraLat{
+                background-color: fuchsia;
+                float: left;
+                width: 50%;
+                height: 100px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+
+        @media screen and (max-width:380px){
+            #barraSup{
+            width: 100%;
+            height: 50px;
+            background-color: purple;
+            height: 75px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #cajaFoto{
+            background-color: yellow;
+            width: 100%;
+            height: 250px;
+            float: left;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #Foto{
+            width: 100%;
+            height: 225px;
+        }
+
+        #barraLat{
+            background-color: fuchsia;
+            float: left;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="barraSup">Barra Superior</div>
+    <div id="cajaFoto"><img id="Foto" src="galaxia.jpg"></div>
+    <div id="barraLat">Barra Lateral</div>
+</body>
+</html>
